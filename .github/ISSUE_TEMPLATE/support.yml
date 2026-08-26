@@ -1,0 +1,24 @@
+name: Support request
+description: Request help with ChemStore Farm Inventory
+title: "Support: "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include passwords, personal information or confidential farm data."
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and the steps that led to it.
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and operating system
+      placeholder: "Example: iPhone 16, iOS 18"
+  - type: input
+    id: version
+    attributes:
+      label: ChemStore version
+      placeholder: "Example: 1.1.0"

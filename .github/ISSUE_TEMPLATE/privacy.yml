@@ -1,0 +1,24 @@
+name: Privacy request
+description: Ask a privacy question or request account/data deletion
+title: "Privacy: "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include passwords, identity documents or confidential data. We will arrange a suitable follow-up channel if verification is required."
+  - type: dropdown
+    id: request
+    attributes:
+      label: Request type
+      options:
+        - Privacy question
+        - Account deletion
+        - Data deletion
+        - Data correction
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+    validations:
+      required: true
